@@ -1,0 +1,280 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Corner Restaurant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf5;
+            color: #3f2b24;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Restaurant header */
+        header {
+            background-color: #7f1d1d;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 5px;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #451a03;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fbbf24;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border: 1px solid #fed7aa;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #991b1b;
+            text-align: center;
+        }
+
+        /* Menu table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #e7c8b7;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #991b1b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff7ed;
+        }
+
+        /* Offers */
+        .offer {
+            background-color: #fff1c2;
+            border-left: 5px solid #d97706;
+            padding: 15px;
+            margin: 12px 0;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            background-color: #991b1b;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #7f1d1d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #451a03;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Food Corner</h1>
+        <p>Fresh Food | Great Taste | Happy Moments</p>
+        <p>Welcome to Our Restaurant</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#hours">Opening Hours</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <div class="section" id="home">
+            <h2>About Our Restaurant</h2>
+
+            <p>
+                Welcome to Food Corner!
+                We serve delicious meals prepared with fresh
+                ingredients in a friendly atmosphere.
+            </p>
+
+            <p>
+                Whether you want a quick snack or a family meal,
+                we have something for everyone.
+            </p>
+
+            <a class="button" href="#menu">
+                Explore Our Menu
+            </a>
+        </div>
+
+        <div class="section" id="menu">
+            <h2>Our Popular Menu</h2>
+
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                </tr>
+
+                <tr>
+                    <td>Veg Biryani</td>
+                    <td>Main Course</td>
+                    <td>Rs. 120</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Chicken Biryani</td>
+                    <td>Main Course</td>
+                    <td>Rs. 180</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Veg Burger</td>
+                    <td>Fast Food</td>
+                    <td>Rs. 80</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Pizza</td>
+                    <td>Fast Food</td>
+                    <td>Rs. 160</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Ice Cream</td>
+                    <td>Dessert</td>
+                    <td>Rs. 50</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section" id="offers">
+            <h2>Special Offers</h2>
+
+            <div class="offer">
+                <h3>Family Meal</h3>
+                <p>Enjoy a special meal package for your family.</p>
+            </div>
+
+            <div class="offer">
+                <h3>Weekend Special</h3>
+                <p>Check out our special weekend menu.</p>
+            </div>
+
+            <div class="offer">
+                <h3>Student Offer</h3>
+                <p>Ask our staff about available student discounts.</p>
+            </div>
+        </div>
+
+        <div class="section" id="hours">
+            <h2>Opening Hours</h2>
+
+            <ul>
+                <li>Monday - Friday: 10 AM - 10 PM</li>
+                <li>Saturday: 10 AM - 11 PM</li>
+                <li>Sunday: 11 AM - 10 PM</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+
+            <p>Address: Main Road, Kadapa, Andhra Pradesh</p>
+            <p>Phone: 9876543210</p>
+            <p>Email: foodcorner@example.com</p>
+
+            <a class="button"
+               href="mailto:foodcorner@example.com">
+                Contact Restaurant
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Food Corner Restaurant</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+```

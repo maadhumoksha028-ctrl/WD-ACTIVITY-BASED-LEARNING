@@ -1,0 +1,246 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1e40af;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Reusable section card */
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            color: #1d4ed8;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 8px;
+        }
+
+        /* Skills */
+        .skills li {
+            margin: 8px;
+        }
+
+        /* Projects */
+        .project {
+            background-color: #eff6ff;
+            padding: 15px;
+            margin: 12px 0;
+            border-left: 4px solid #2563eb;
+        }
+
+        /* Contact button */
+        .button {
+            display: inline-block;
+            background-color: #1d4ed8;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #172554;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            main {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mokshagna</h1>
+        <p>B.Tech Student | Beginner Web Developer</p>
+        <p>Welcome to my personal portfolio!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <div class="card" id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Mokshagna.
+                I am a B.Tech student interested in technology,
+                programming, and web development.
+            </p>
+
+            <p>
+                My goal is to improve my technical skills
+                and develop useful websites.
+            </p>
+        </div>
+
+        <div class="card" id="education">
+            <h2>Educational Qualifications</h2>
+
+            <table width="100%" border="1" cellpadding="10">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>B.Tech</td>
+                    <td>DR RVR NRIIT UNIVERSITY</td>
+                    <td>Currently Studying</td>
+                </tr>
+
+                <tr>
+                    <td>Intermediate</td>
+                    <td>NRI Junior College</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card" id="skills">
+            <h2>My Technical Skills</h2>
+
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python Programming</li>
+                <li>Basic Computer Knowledge</li>
+            </ul>
+        </div>
+
+        <div class="card" id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Project 1: Personal Portfolio</h3>
+                <p>
+                    A personal website created using HTML
+                    and internal CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Restaurant Website</h3>
+                <p>
+                    A restaurant webpage displaying food items,
+                    prices, and special offers.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>My Hobbies</h2>
+
+            <ol>
+                <li>Watching Movies</li>
+                <li>Playing Games</li>
+                <li>Listening to Music</li>
+                <li>Learning New Technologies</li>
+            </ol>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Contact Me</h2>
+
+            <p>Email: student@example.com</p>
+            <p>Location: Kadapa, Andhra Pradesh</p>
+
+            <a class="button"
+               href="mailto:student@example.com">
+                Send Email
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mokshagna | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
+```
